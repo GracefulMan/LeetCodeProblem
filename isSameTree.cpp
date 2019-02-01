@@ -13,10 +13,7 @@ struct TreeNode{
 
 bool isSameTree(TreeNode* p, TreeNode* q){
     if(p==NULL&&q==NULL) return true;
-    if((p==NULL&&q!=NULL)||(p!=NULL&&q==NULL)||((p!=NULL&&q!=NULL)&&(p->val!=q->val)))
+    else if((p==NULL&&q!=NULL)||(p!=NULL&&q==NULL)||(p->val!=q->val))
         return false;
-    bool leftRes=true,rightRes=true;
-    if(p->left)  leftRes = isSameTree(p->left,q->left);
-    if(p->right)  rightRes = isSameTree(p->right,q->right);
-    return leftRes&&rightRes;
+    else return isSameTree(p->left,q->left)&&isSameTree(p->right,q->right);
 }
