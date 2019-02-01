@@ -7,3 +7,4 @@ add_executable(RemoveDuplicatesfromSortedArray RemoveDuplicatesfromSortedArray.c
 add_executable(MergeSortedArray MergeSortedArray.cpp)
 add_executable(isSameTree isSameTree.cpp)
 add_executable(SymmetricTree SymmetricTree.cpp)
+add_executable(MaximumDepthofBinaryTree MaximumDepthofBinaryTree.cpp)
