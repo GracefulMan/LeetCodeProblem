@@ -16,3 +16,16 @@ int maxProfit(vector<int>& prices) {
     }
     return difference;
 }
+
+int maxProfit1(vector<int>& prices){
+    int minItem = INT_MAX;
+    int difference = 0;
+    for(int i = 0; i < prices.size(); i++){
+        if(minItem > prices[i]){
+            minItem =  prices[i];
+        } else {
+            difference =  max(difference , prices[i] - minItem);
+        }
+    }
+    return  difference;
+}
