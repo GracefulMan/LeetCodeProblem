@@ -1,6 +1,3 @@
-//
-// Created by 马鸿英 on 2019/1/31.
-//
 #include <iostream>
 #include <vector>
 using namespace std;
