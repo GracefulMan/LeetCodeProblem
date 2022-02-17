@@ -16,3 +16,5 @@ add_executable(bilbil_4 bilbil_4.cpp)
 add_executable(bilibili_5 bilibili_5.cpp)
 add_executable(bilibili_6_7 bilibili_6_7.cpp)
 add_executable(priority_test priority_test.cpp)
+
+add_executable(union_set union_set.cpp)
